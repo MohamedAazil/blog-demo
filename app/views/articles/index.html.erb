@@ -1,0 +1,9 @@
+<h1>Articles</h1>
+
+<% @articles.each do |article|%>
+    <div>
+        <h3><%= article.title%></h3>
+        <h6><i><%= article.author%></i></h6>
+        <%= link_to "Read more", article%>
+    </div>
+<%end%>

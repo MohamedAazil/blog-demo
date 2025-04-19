@@ -1,0 +1,9 @@
+<h1><%= @article.title%></h1>
+<h6><i><%= @article.author%></i></h6>
+<p><%= @article.body%></p>
+
+<%= link_to "Back", articles_path%>
+<%= link_to "Edit", edit_article_path%>
+
+
+<%= button_to "Delete", @product, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
